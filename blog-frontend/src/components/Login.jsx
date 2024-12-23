@@ -7,7 +7,7 @@ function Login({ setToken }) {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("/auth/login", { email, password });
+      const response = await axios.post("http://localhost:7000/auth/login", { email, password });
       localStorage.setItem("token", response.data.token);
       setToken(response.data.token);
     } catch (error) {

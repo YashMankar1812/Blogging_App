@@ -16,6 +16,7 @@ function App() {
           <Logout setToken={setToken} />
           <CreatePost token={token} />
           <PostList token={token} />
+          <CreateComment token={token} />
         </>
       ) : (
         <>

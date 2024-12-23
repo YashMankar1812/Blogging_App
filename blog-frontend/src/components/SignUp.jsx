@@ -7,7 +7,7 @@ function SignUp() {
 
   const handleSignUp = async () => {
     try {
-      const response = await axios.post("/auth/SignUp", { email, password });
+      const response = await axios.post("http://localhost:7000/auth/SignUp", { email, password });
       alert(response.data.message); // or handle it as needed
     } catch (error) {
       console.error(error);
